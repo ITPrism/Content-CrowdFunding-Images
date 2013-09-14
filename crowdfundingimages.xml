@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="content" method="upgrade">
+    <name>PLG_CONTENT_CROWDFUNDINGIMAGES</name>
+    <author>Todor Iliev</author>
+    <copyright>Copyright (C) 2013 Todor Iliev ( ITPrism.com ). All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <authorEmail>todor@itprism.com</authorEmail>
+    <authorUrl>http://itprism.com</authorUrl>
+    <version>1.0</version>
+    <creationDate>15 September, 2013</creationDate>
+    <description>PLG_CONTENT_CROWDFUNDINGIMAGES_DESC</description>
+    
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.plg_content_crowdfundingimages.ini</language>
+        <language tag="en-GB">en-GB/en-GB.plg_content_crowdfundingimages.sys.ini</language>
+    </languages> 
+    
+    <files>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+        <filename plugin="crowdfundingimages">crowdfundingimages.php</filename>
+        <filename>index.html</filename>
+    </files>
+    
+    <help url="PLG_CONTENT_CROWDFUNDINGIMAGES_HELP_URL"/>
+    
+    <config>
+		<fields name="params">
+			<fieldset name="basic">
+                <field name="gallery" type="list" default="fancybox" label="PLG_CONTENT_CROWDFUNDINGIMAGES_GALLERY" description="PLG_CONTENT_CROWDFUNDINGIMAGES_GALLERY_DESC" class="btn-group">
+                   <option value="fancybox">FancyBox</option>
+                   <option value="magnific">Magnific</option>
+                </field>
+			</fieldset>
+        </fields>
+	</config>
+</extension>
