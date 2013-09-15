@@ -64,7 +64,11 @@ class plgContentCrowdFundingImages extends JPlugin {
         $html = array();
         
         $html[] = '<div class="clearfix"></div>';
-        $html[] = '<h4>'.JText::_("PLG_CONTENT_CROWDFUNDINGIMAGES_IMAGES").'</h4>';
+        
+        // Display title
+        if($this->params->get("display_title", 0)) {
+            $html[] = '<h4>'.JText::_("PLG_CONTENT_CROWDFUNDINGIMAGES_IMAGES").'</h4>';
+        }
         
         switch($this->params->get("gallery")) {
             

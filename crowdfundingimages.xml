@@ -32,6 +32,12 @@
                    <option value="fancybox">FancyBox</option>
                    <option value="magnific">Magnific</option>
                 </field>
+                
+                <field name="display_title" type="radio" default="0" label="PLG_CONTENT_CROWDFUNDINGIMAGES_DISPLAY_TITLE" description="PLG_CONTENT_CROWDFUNDINGIMAGES_DISPLAY_TITLE_DESC" class="btn-group">
+                   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+                </field>
+                
 			</fieldset>
         </fields>
 	</config>
