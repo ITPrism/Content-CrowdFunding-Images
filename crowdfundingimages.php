@@ -70,6 +70,11 @@ class plgContentCrowdFundingImages extends JPlugin {
             $html[] = '<h4>'.JText::_("PLG_CONTENT_CROWDFUNDINGIMAGES_IMAGES").'</h4>';
         }
         
+        // Load jQuery library
+        if($this->params->get("include_jquery", 0)) {
+            JHtml::_("jquery.framework");
+        }
+        
         switch($this->params->get("gallery")) {
             
             case "magnific":
@@ -77,9 +82,7 @@ class plgContentCrowdFundingImages extends JPlugin {
                 break;
                 
             default: // FancyBox
-                
                 $html = $this->prepareFancybox($images, $html, $item->id);
-                
                 break;
         }
         
@@ -94,7 +97,6 @@ class plgContentCrowdFundingImages extends JPlugin {
     
         $doc->addStyleSheet($this->pluginUri."/css/magnific-popup.css");
     
-        JHtml::_("jquery.framework");
         $doc->addScript($this->pluginUri."/js/jquery.magnific-popup.min.js");
     
         $js = '
@@ -135,7 +137,6 @@ class plgContentCrowdFundingImages extends JPlugin {
         
         $doc->addStyleSheet($this->pluginUri."/css/jquery.fancybox.css");
         
-        JHtml::_("jquery.framework");
         $doc->addScript($this->pluginUri."/js/jquery.fancybox.min.js");
         $doc->addScript($this->pluginUri."/js/jquery.easing.js");
         $doc->addScript($this->pluginUri."/js/jquery.mousewheel.js");
