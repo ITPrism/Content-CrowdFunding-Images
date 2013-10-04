@@ -6,9 +6,14 @@
     <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
     <authorEmail>todor@itprism.com</authorEmail>
     <authorUrl>http://itprism.com</authorUrl>
-    <version>1.1</version>
-    <creationDate>22 September, 2013</creationDate>
-    <description>PLG_CONTENT_CROWDFUNDINGIMAGES_DESC</description>
+    <version>1.2</version>
+    <creationDate>05 October, 2013</creationDate>
+    <description>
+<![CDATA[
+<p>CrowdFunding - Images is a plugin that displays the additional images of the project on the details page.</p>
+<p><a href="http://itprism.com/" target="_blank">Subscribe for the newsletter</a> to receive information about updates and new ITPrism extensions.</p>
+<p>Please, <a href="http://extensions.joomla.org/extensions/e-commerce/donations/23876" target="_blank">vote for the extension</a> on Joomla! Extensions Directory</p>
+]]></description>
     
     <languages folder="language">
         <language tag="en-GB">en-GB/en-GB.plg_content_crowdfundingimages.ini</language>
