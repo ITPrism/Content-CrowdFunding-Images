@@ -3,7 +3,7 @@
  * @package		 CrowdFunding
  * @subpackage	 Plugins
  * @author       Todor Iliev
- * @copyright    Copyright (C) 2013 Todor Iliev <todor@itprism.com>. All rights reserved.
+ * @copyright    Copyright (C) 2014 Todor Iliev <todor@itprism.com>. All rights reserved.
  * @license      http://www.gnu.org/copyleft/gpl.html GNU/GPL
  */
 
@@ -135,9 +135,8 @@ class plgContentCrowdFundingImages extends JPlugin {
         $doc     = JFactory::getDocument();
         /**  @var $doc JDocumentHtml **/
         
-        $doc->addStyleSheet($this->pluginUri."/css/jquery.fancybox.css");
+        JHtml::_("crowdfunding.jquery_fancybox");
         
-        $doc->addScript($this->pluginUri."/js/jquery.fancybox.min.js");
         $doc->addScript($this->pluginUri."/js/jquery.easing.js");
         $doc->addScript($this->pluginUri."/js/jquery.mousewheel.js");
         
