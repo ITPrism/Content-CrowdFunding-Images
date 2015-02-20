@@ -2,24 +2,23 @@
 <extension version="3.2" type="plugin" group="content" method="upgrade">
     <name>PLG_CONTENT_CROWDFUNDINGIMAGES</name>
     <author>Todor Iliev</author>
-    <copyright>Copyright (C) 2014 Todor Iliev ( ITPrism.com ). All rights reserved.</copyright>
+    <copyright>Copyright (C) 2015 Todor Iliev ( ITPrism.com ). All rights reserved.</copyright>
     <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
     <authorEmail>todor@itprism.com</authorEmail>
     <authorUrl>http://itprism.com</authorUrl>
-    <version>1.5</version>
-    <creationDate>31 May, 2014</creationDate>
+    <version>1.6</version>
+    <creationDate>20 February, 2014</creationDate>
     <description><![CDATA[
     <p>CrowdFunding - Images is a plugin that displays the additional images of the project on the details page.</p>
     <p><a href="http://itprism.com/" target="_blank">Subscribe for the newsletter</a> to receive information about updates and new ITPrism extensions.</p>
-    <p>Please, <a href="http://extensions.joomla.org/extensions/e-commerce/donations/23876" target="_blank">vote for the extension</a> on Joomla! Extensions Directory</p>
+    <p>Please, <a href="http://extensions.joomla.org/extensions/extension/e-commerce/donations/crowdfunding" target="_blank">vote for the extension</a> on Joomla! Extensions Directory</p>
     ]]></description>
     
     <help url="PLG_CONTENT_CROWDFUNDINGIMAGES_HELP_URL"/>
     
     <files>
         <filename plugin="crowdfundingimages">crowdfundingimages.php</filename>
-        <filename>index.html</filename>
-        
+
 		<folder>css</folder>
 		<folder>images</folder>
 		<folder>js</folder>
